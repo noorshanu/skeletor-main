@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap");
+@font-face {
+  font-family: "thunder";
+  
+  src:  url('fonts/Thunder-BoldLC.ttf') format('truetype');
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,4 +21,14 @@
 }
 .font-mabry {
   font-family: "Maven Pro", sans-serif;
+}
+.font-thunder{
+  font-family: 'thunder';
+}
+
+.ui-text{
+  background: -webkit-linear-gradient( #FFFFFF, #D852E5, #B020FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
 }
