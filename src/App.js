@@ -1,6 +1,10 @@
 import Navbar from "./components/Navbar";
 import About from "./section/About";
+import Features from "./section/Features";
 import Hero from "./section/Hero";
+import HowToBuy from "./section/HowToBuy";
+import Partners from "./section/Partners";
+import Roadmap from "./section/Roadmap";
 import Tokenomics from "./section/Tokenomics";
 
 function App() {
@@ -11,9 +15,12 @@ function App() {
 
         <Hero />
       </div>
-        <About />
-        <Tokenomics/>
-
+      <About />
+      <Tokenomics />
+      <Roadmap />
+      <HowToBuy />
+      <Partners />
+      <Features />
     </div>
   );
 }
