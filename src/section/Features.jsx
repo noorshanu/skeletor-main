@@ -3,7 +3,7 @@ import Marquee from 'react-fast-marquee'
 
 const Features = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20 bg-gradient-to-r from-[#15161D] to-transparent">
       <div className="grid sm:grid-cols-2 grid-cols-1">
         <div className="relative">
           <div className="flex h-full flex-col justify-end pb-20 px-4 max-w-lg mx-auto ">

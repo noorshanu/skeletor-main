@@ -5,6 +5,7 @@ import Hero from "./section/Hero";
 import HowToBuy from "./section/HowToBuy";
 import Partners from "./section/Partners";
 import Roadmap from "./section/Roadmap";
+import Footer from "./section/Footer";
 import Tokenomics from "./section/Tokenomics";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <HowToBuy />
       <Partners />
       <Features />
+      <Footer />
     </div>
   );
 }

@@ -2,10 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap");
 @font-face {
   font-family: "thunder";
-  
-  src:  url('fonts/Thunder-BoldLC.ttf') format('truetype');
-}
 
+  src: url("fonts/Thunder-BoldLC.ttf") format("truetype");
+}
 
 @tailwind base;
 @tailwind components;
@@ -22,21 +21,27 @@
 .font-mabry {
   font-family: "Maven Pro", sans-serif;
 }
-.font-thunder{
-  font-family: 'thunder';
+.font-thunder {
+  font-family: "thunder";
+}
+@font-face {
+  font-family: "gunk";
+  src: url("/public/fonts/blackgunk.ttf");
+}
+.font-gunk {
+  font-family: "gunk";
 }
 
-.ui-text{
-  background: -webkit-linear-gradient( #FFFFFF, #D852E5, #B020FF);
+.ui-text {
+  background: -webkit-linear-gradient(#ffffff, #d852e5, #b020ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
- 
 }
 @media (min-width: 640px) {
   .marquee {
-      width: 40vw;
+    width: 40vw;
   }
 }
 .marquee {
-    width: 90vw;
+  width: 90vw;
 }
