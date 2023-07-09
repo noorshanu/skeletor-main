@@ -9,17 +9,17 @@ let navItems = [
     icon: '/assets/icons/business.png',
   },
   {
-    label: 'Twitter',
+    label: 'About',
     route: 'Market',
     icon: '/assets/icons/finance.png',
   },
   {
-    label: 'Discord',
+    label: 'Echosystem',
     route: 'Market',
     icon: '/assets/icons/finance.png',
   },
   {
-    label: 'Telegram',
+    label: 'Roadmap',
     route: 'Market',
     icon: '/assets/icons/finance.png',
   },
@@ -31,7 +31,7 @@ export default function Navbar() {
   const route = '/'
   return (
     // bg-[#14141f]
-    <Popover className="fixed top-0 left-0 right-0 mx-auto bg-white bg-opacity-[0.0001] backdrop-filter backdrop-blur-2xl z-10 max-w-7xl">
+    <Popover className="z-20 fixed top-0 left-0 right-0 mx-auto bg-white bg-opacity-[0.0001] backdrop-filter backdrop-blur-2xl  max-w-7xl">
       <div className="font-orbitron flex items-center justify-between  py-3 md:justify-start md:space-x-10 animate-top-left">
         <img src="/logo.svg" className="" alt="" />
         <div className=" flex  flex-grow space-x-4 lg:w-0">

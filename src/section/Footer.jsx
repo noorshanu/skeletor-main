@@ -1,11 +1,15 @@
 import React from 'react'
+import { RxDiscordLogo } from 'react-icons/rx'
+import { LiaTelegramPlane } from 'react-icons/lia'
+import { CiTwitter } from 'react-icons/ci'
+
 const Footer = () => {
   return (
     <div className="footer py-8  relative ">
       <div className="side-green"></div>
       <div className="mx-auto  max-w-7xl px-4">
-        <div className="grid  grid-cols-1 md:grid-cols-12 gap-y-4 gap-x-16">
-          <div className="flex items-center md:justify-end md:col-span-4">
+        <div className="grid  grid-cols-1 md:grid-cols-12 gap-y-4 gap-x-6 md:gap-x-10 lg:gap-x-16">
+          <div className="flex items-center sm:col-span-12 sm:justify-start md:justify-end md:col-span-4">
             <div className={'flex pr-5 items-center'}>
               <img src="/logo2.svg" alt="" className={``} />
               <div>
@@ -18,9 +22,11 @@ const Footer = () => {
                 </h1>
               </div>
             </div>
-            <img src="/divider.png" className="h-full w-1" alt="" />
+            <div className="h-[70%] w-[0.1px] bg-[#373745]" alt="" />
           </div>
-          <div className="md:col-span-4  py-6 flex justify-between">
+
+          
+          <div className="sm:col-span-7 md:col-span-4  py-6 flex w-full justify-between">
             <div className="flex-1">
               <h1 className={`font-monument text-white font-medium`}>PAGES</h1>
               <div className="flex justify-between mt-5">
@@ -31,8 +37,10 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="ml-12 flex-1">
-              <h1 className={`font-monument text-white font-medium`}></h1>
+            <div className=" flex-1">
+              <h1 className={`font-monument text-white font-medium invisible`}>
+                .
+              </h1>
               <div className="flex mt-5">
                 <ul className="text-white font-red-hat opacity-[0.57] font-light text-base space-y-4">
                   <li className={`cursor-pointer `}>Features</li>
@@ -41,23 +49,40 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="ml-12 flex-1">
+            <div className=" flex-1">
               <h1 className={`font-monument text-white font-medium`}>
                 SOCIALS
               </h1>
               <div className="flex mt-5">
-                <ul className="text-white font-red-hat opacity-[0.57] font-light text-base space-y-4">
-                  <li className={`flex gap-2 items-center cursor-pointer `}>
-                    <img src="/social-media/twitter-white" /> Twitter
+                <ul className="text-white font-red-hat opacity-[0.57]  text-base space-y-7">
+                  <li
+                    className={`flex gap-2 items-center font-light hover:font-medium text-gray-200 hover:text-white cursor-pointer `}
+                  >
+                    <CiTwitter className="text-gray-200 hover:text-white" />{' '}
+                    Twitter
                   </li>
-                  <li className={`flex gap-2 items-center cursor-pointer `}>
-                    <img src="/social-media/telegram-white" /> Telegram
+                  <li
+                    className={`flex gap-2 items-center font-light hover:font-medium cursor-pointer text-gray-200 hover:text-white `}
+                  >
+                    <LiaTelegramPlane className="text-gray-200 hover:text-white" />{' '}
+                    Telegram
+                  </li>
+                  <li
+                    className={`flex gap-2 items-center font-light hover:font-medium cursor-pointer text-gray-200 hover:text-white `}
+                  >
+                    <RxDiscordLogo className="text-gray-200 hover:text-white" />{' '}
+                    Discord
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="md:col-span-4 py-6 space-y-5">
+
+
+
+
+
+          <div className="sm:col-span-5 md:col-span-4 py-6 space-y-5">
             <h1 className={`text-white font-monument `}>Mobile App</h1>
             <p className={'text-white opacity-50 font-barlow max-w-[180px]'}>
               Sign up for the waiting list to get notified when we will release
@@ -69,9 +94,9 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="Enter your email"
-                className="bg-transparent border-none outline-none w-[70%] text-white text-sm"
+                className="bg-transparent border-none outline-none w-auto text-white text-sm"
               />
-              <button className="w-[30%] bg-white text-black font-barlow font-medium text-sm py-2 px-3 cursor-pointer rounded-lg">
+              <button className="w-fit bg-white text-black font-barlow font-medium text-sm py-2 px-3 cursor-pointer rounded-lg">
                 Subscribe
               </button>
             </div>
@@ -79,7 +104,7 @@ const Footer = () => {
         </div>
         <img
           src="/line.svg"
-          className="w-[100%] my-12 h-auto mx-auto b"
+          className="w-[100%] mb-10 mt-6 h-auto mx-auto b"
           alt=""
         />
         <p

@@ -11,10 +11,24 @@ import Tokenomics from "./section/Tokenomics";
 function App() {
   return (
     <div className="App bg-[#02010B]">
-      <div className="bg-[url('/public/header.svg')] bg-cover">
+      <div className="relative">
         <Navbar />
 
         <Hero />
+        <video
+          loop
+          playsInline
+          autoplay={true}
+          autoPlay
+          width={'100%'}
+          height={'100%'}
+          
+          muted
+          // poster="/header.svg"
+          className="absolute inset-0 z-10 object-cover min-h-full min-w-full"
+        >
+          <source src="/video/hero.mp4" type="video/mp4" />
+        </video>
       </div>
       <About />
       <Tokenomics />
