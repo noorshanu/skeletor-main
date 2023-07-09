@@ -54,11 +54,11 @@ const Roadmap = () => {
   return (
     <div className="min-h-screen relative">
       <img className="mx-auto mt-28 mb-40 " src="/text/ROADMAP.svg" />
-      <div className="grid lg:grid-cols-4 place-items-center place-content-center px-10 sm:grid-cols-2 max-w-6xl mx-auto  z-50 gap-x-10 gap-y-8">
+      <div className="grid lg:grid-cols-4 place-items-center place-content-center px-10 sm:grid-cols-2 max-w-6xl mx-auto  z-40 gap-x-10 gap-y-8">
         {roadmapCards.map((card) => {
           return (
             <div
-              className={`bg-white bg-opacity-[0.06] max-w-[260px] pl-12 sm:pl-8 pr-4  h-fit backdrop-filter backdrop-blur-md  z-50 rounded-full py-10   text-white ${card.className}`}
+              className={`bg-white bg-opacity-[0.06] max-w-[260px] pl-12 sm:pl-8 pr-4  h-fit backdrop-filter backdrop-blur-md  z-40 rounded-full py-10   text-white ${card.className}`}
             >
               <h1 className="text-[#D280FF] font-bold text-xl mt-5 mb-3">
                 {card.label}

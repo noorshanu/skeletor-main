@@ -110,7 +110,7 @@ const Footer = () => {
         <p
           className={`font-red-hat text-white opacity-50 mx-auto text-center md:text-end text-sm `}
         >
-          Copyright @ 2023. All rights recieved
+          
         </p>
       </div>
     </div>

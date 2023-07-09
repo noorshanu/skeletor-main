@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -29,9 +29,16 @@ let navItems = [
 
 export default function Navbar() {
   const route = '/'
+  let blur = false
   return (
     // bg-[#14141f]
-    <Popover className="z-20 fixed top-0 left-0 right-0 mx-auto bg-white bg-opacity-[0.0001] backdrop-filter backdrop-blur-2xl  max-w-7xl">
+    <Popover
+      className={`z-50 fixed top-0 left-0 right-0 mx-auto ${
+        blur
+          ? 'bg-white bg-opacity-[0.0001] backdrop-filter backdrop-blur-2xl'
+          : 'bg-transparent'
+      }   max-w-7xl`}
+    >
       <div className="font-orbitron flex items-center justify-between  py-3 md:justify-start md:space-x-10 animate-top-left">
         <img src="/logo.svg" className="" alt="" />
         <div className=" flex  flex-grow space-x-4 lg:w-0">
@@ -63,7 +70,7 @@ export default function Navbar() {
           </Popover.Group>
           <a
             href="/"
-            className="md:flex hidden  justify-self-end whitespace-nowrap rounded-md cursor-pointer border border-transparent transition-colors hover:border-white   py-2 font-bold  px-3 text-sm hover:text-white bg-white hover:bg-black "
+            className="md:flex hidden  justify-self-end whitespace-nowrap rounded-md cursor-pointer  transition-colors hover:border-white   py-2 font-bold  px-3 text-sm  bg-black text-white hover:bg-white hover:bg-opacity-40 hover:backdrop-blur-lg"
           >
             <span>VIEW BETA DAPP</span>
           </a>
