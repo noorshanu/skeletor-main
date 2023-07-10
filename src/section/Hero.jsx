@@ -25,10 +25,10 @@ const Hero = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
             <div className="mt-8 flex items-center justify-center space-x-3 sm:space-x-4">
-              <button className="py-4 px-4 rounded-lg bg-black text-white hover:bg-white hover:bg-opacity-40 hover:backdrop-blur-lg">
+              <button className="py-4 px-4 rounded-lg bg-white text-black hover:bg-white hover:bg-opacity-40 hover:backdrop-blur-lg">
                 Join Now
               </button>
-              <button className="py-4 px-4 rounded-lg bg-black text-white hover:bg-white hover:bg-opacity-40 hover:backdrop-blur-lg">
+              <button className="py-4 px-4 rounded-lg bg-white text-black hover:bg-white hover:bg-opacity-40 hover:backdrop-blur-lg">
                 Read Whitepaper
               </button>
             </div>
