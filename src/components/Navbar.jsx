@@ -70,7 +70,7 @@ export default function Navbar() {
           </Popover.Group>
           <a
             href="/"
-            className="md:flex hidden  justify-self-end whitespace-nowrap rounded-md cursor-pointer  transition-colors hover:border-white   py-2 font-bold  px-3 text-sm  bg-black text-white hover:bg-white hover:bg-opacity-40 hover:backdrop-blur-lg"
+            className="md:flex hidden  justify-self-end whitespace-nowrap rounded-md cursor-pointer  transition-colors hover:border-white   py-2 font-bold  px-3 text-sm  bg-white text-black hover:bg-white hover:bg-opacity-40 hover:backdrop-blur-lg"
           >
             <span>VIEW BETA DAPP</span>
           </a>
